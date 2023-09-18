@@ -1,5 +1,5 @@
-import { LineChart, Line, XAxis, YAxis } from "recharts";
-const LineCharts = () => {
+import { BarChart, Bar, XAxis, YAxis } from "recharts";
+const BarCharts = () => {
   const studentData = [
     {
       student_id: "1001",
@@ -18,34 +18,35 @@ const LineCharts = () => {
     {
       student_id: "1003",
       name: "Michael Brown",
-      math_marks: 94,
-      physics_marks: 40,
+      math_marks: 67,
+      physics_marks: 30,
       chemistry_marks: 97,
     },
     {
       student_id: "1004",
       name: "Sophia Davis",
-      math_marks: 85,
-      physics_marks: 99,
-      chemistry_marks: 60,
+      math_marks: 13,
+      physics_marks: 56,
+      chemistry_marks: 89,
     },
     {
       student_id: "1005",
       name: "William Wilson",
-      math_marks: 75,
-      physics_marks: 85,
-      chemistry_marks: 94,
+      math_marks: 23,
+      physics_marks: 35,
+      chemistry_marks: 67,
     },
   ];
   return (
-    <LineChart width={800} height={300} data={studentData}>
-      <Line type="monotone" dataKey="math_marks" stroke="red" />
-      <Line type="monotone" dataKey="physics_marks" stroke="yellow" />
-      <Line type="monotone" dataKey="chemistry_marks" stroke="blue" />
+    <BarChart width={800} height={500} data={studentData}>
       <XAxis dataKey="name" />
+
       <YAxis />
-    </LineChart>
+      <Bar dataKey="math_marks" fill="green" minPointSize={10} />
+      <Bar dataKey="physics_marks" fill="red" minPointSize={10} />
+      <Bar dataKey="chemistry_marks" fill="blue" minPointSize={10} />
+    </BarChart>
   );
 };
 
-export default LineCharts;
+export default BarCharts;

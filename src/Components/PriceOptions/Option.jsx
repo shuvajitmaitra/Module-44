@@ -9,7 +9,7 @@ const Option = ({ option }) => {
       <h3 className="text-2xl font-bold">Price: {price} </h3>
       <ul className="flex-grow">
         {features.map((feature, index) => (
-          <li key={index} className="flex items-center gap-2 py-1">
+          <li key={index} className="flex items-center gap-1 py-1">
             {" "}
             <IoMdCheckmarkCircleOutline className="text-blue-700" />
             {feature}{" "}

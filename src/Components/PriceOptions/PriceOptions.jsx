@@ -37,18 +37,6 @@ const PriceOptions = () => {
         "Towel service",
       ],
     },
-    {
-      id: "4",
-      name: "Platinum Membership",
-      price: 120.0,
-      features: [
-        "All Gold Membership features",
-        "Unlimited personal trainer sessions",
-        "Exclusive access to VIP lounge",
-        "Massage and spa treatments",
-        "Complimentary refreshments",
-      ],
-    },
   ];
 
   return (

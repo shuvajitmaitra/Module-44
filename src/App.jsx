@@ -1,4 +1,5 @@
 import "./App.css";
+import LineCharts from "./Components/LineCharts/LineCharts";
 import Navbar from "./Components/Navbar/navbar";
 import PriceOptions from "./Components/PriceOptions/PriceOptions";
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Navbar></Navbar>
       <h1 className="text-4xl bg-red-300 text-center font-bold">Hello World</h1>
       <PriceOptions></PriceOptions>
+      <LineCharts></LineCharts>
     </div>
   );
 }

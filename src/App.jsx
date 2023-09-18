@@ -1,8 +1,10 @@
 import "./App.css";
+import Axios from "./Components/Axico/Axios";
 import BarCharts from "./Components/BarCharts/BarCharts";
 import LineCharts from "./Components/LineCharts/LineCharts";
 import Navbar from "./Components/Navbar/navbar";
 import PriceOptions from "./Components/PriceOptions/PriceOptions";
+import RandarCharts from "./Components/RanderCharts/RanderCharts";
 function App() {
   return (
     <div>
@@ -11,6 +13,8 @@ function App() {
       <PriceOptions></PriceOptions>
       <LineCharts></LineCharts>
       <BarCharts></BarCharts>
+      <RandarCharts></RandarCharts>
+      <Axios></Axios>
     </div>
   );
 }
